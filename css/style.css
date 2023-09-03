@@ -1,0 +1,352 @@
+/* landing page */
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: var(--fullScreen-height);
+  width: var(--fullScreen-width);
+  background: var(--landing-page-image);
+}
+
+#background-music {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  z-index: 10;
+}
+
+#logo {
+  background: var(--logo-image);
+  height: 20%;
+  width: 50%;
+}
+
+#instructions {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 35%;
+  color: black;
+  font-size: 2.5rem;
+  font-family: var(--font-family-default);
+}
+
+#instructions ul li::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/assets/images/startIcon.png");
+  background-size: cover;
+  margin-right: 10px;
+}
+#start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/assets/images/StartBtn.jpg") no-repeat center center/cover;
+  border-radius: 1rem;
+  color: var(--cloud-color);
+  text-shadow: 0.7rem 0rem 0.2rem black;
+  height: 10rem;
+  width: 40rem;
+  font-size: 3.5rem;
+  font-family: var(--font-family-default);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#start-btn:hover {
+  animation: heartbeat 1.5s infinite;
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 0 15px var(--currently-Active-color);
+  box-shadow: 0 0 15px var(--currently-Active-color);
+  color: var(--currently-Active-color);
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* ====================================Tiles ===================================================== */
+.tile:hover {
+  border-top: var(--hovering-tiles-color) solid 1px ;
+  border-left: var(--hovering-tiles-color) solid 1px ;
+}
+
+
+.sky {
+  background-color: transparent;
+}
+
+.cloud {
+  background: var(--cloud-color);
+}
+
+.leaves {
+  background: var(--leaves-image);
+}
+
+.strongLeaves {
+  background: var(--strongLeaves-image);
+}
+
+.wood {
+  background: var(--wood-image);
+}
+
+.rock {
+  background: var(--rock-image);
+}
+
+.grass {
+  background: var(--grass-image)
+}
+
+.soil {
+  background: var(--soil-image);
+}
+
+.iron {
+  background: var(--iron-image);
+}
+
+.gold {
+  background: var(--gold-image);
+}
+
+.diamond {
+  background: var(--diamond-image);
+}
+
+/* Game Screen ============================*/
+.gameContainer {
+  display: none;
+  height: var(--fullScreen-height);
+  width: var(--fullScreen-width);
+  background-color: rgba(0, 0, 0, 0.415);
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  z-index: 3;
+}
+
+#tool-bar {
+  height: 100%;
+  width: 10%;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#world-map {
+  height: 100%;
+  width: 90%;
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background: rgb(89, 184, 222);
+}
+/* ===========================ToolBar ==================================== */
+.pauseBtn {
+  height: 6rem;
+  width: 80%;
+  height: 6%;
+  font-size: 2.3rem;
+  font-family: var(--font-family-default);
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(156, 168, 199);
+  text-shadow: -1px -1px black, 1px 1px rgb(255, 255, 255);
+  color: rgb(171, 76, 153);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em rgb(108, 101, 176);
+  cursor: pointer;
+}
+
+.pauseBtn:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2em;
+}
+
+.shovelBtn{
+  background: var(--shovel-image);
+  background-size: var(--tools-image-size);
+  background-color: var(--cloud-color);
+}
+.pickaxeBtn{
+  background: var(--pickaxe-image);
+  background-size: var(--tools-image-size);
+  background-color: var(--cloud-color);
+}
+.axeBtn{
+  background: var(--axe-image);
+  background-size: var(--tools-image-size);
+  background-color: var(--cloud-color);
+}
+.syringeBtn{
+  background: var(--syringe-image);
+  background-size: var(--tools-image-size);
+  background-color: var(--cloud-color);
+  
+}
+
+.animatedStashBox {
+  background: var(--animatedBox-image);
+  background-size: 18rem 18rem;
+  width: 80%;
+  height: 20rem;
+  cursor: pointer;
+}
+
+.resetBtn {
+	text-shadow: 1px 1px pink, -1px -1px maroon;
+	line-height: 1.5em;
+	text-align: center;
+	display: inline-block;
+	width: 10rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-family: var(--font-family-default);
+	-webkit-border-radius: .75em;
+	-moz-border-radius: .75em;
+	-o-border-radius: .75em;
+		border-radius: .75em;
+	background-color: red;
+	-webkit-box-shadow:  0 .2em maroon;
+	-moz-box-shadow:  0 .2em maroon;
+	-o-box-shadow:  0 .2em maroon;
+	box-shadow:  0 .2em maroon;
+	color: rgb(55, 27, 27);
+	margin: 5px;
+	background-color: red;
+	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	cursor: pointer;
+  padding-left: 5px;
+}
+.resetBtn:active{
+  box-shadow: none;
+  position: relative;
+  top: .2em;
+}
+/* =================== Stash ======================================================= */
+#stashContainer {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5,1fr);
+  width: 10%;
+  height: 30%;
+  background-color: #7e8680;
+  border: #000000 solid 0.1rem;
+  border-radius: 1rem;
+  bottom: 2rem;
+  left: 26rem;
+  padding-left: 3rem;
+}
+
+#stashContainer:hover {
+  cursor: pointer;
+}
+
+.cloudInStash {
+  background-color: var(--cloud-color);
+}
+.leavesInStash {
+  background: var(--leaves-image)
+}
+.strongLeavesInStash {
+  background: var(--strongLeaves-image)
+}
+.woodInStash {
+  background: var(--wood-image)
+}
+.soilInStash {
+   background: var(--soil-image)
+}
+.grassInStash {
+  background: var(--grass-image)
+}
+.rockInStash {
+  background: var(--rock-image)
+}
+.ironInStash {
+  background: var(--iron-image)
+}
+.goldInStash {
+  background: var(--gold-image)
+}
+.diamondInStash {
+  background: var(--diamond-image)
+}
+/* =============================Pause - functions ======================================================== */
+#pauseScreen {
+  height: var(--fullScreen-height);
+  width: var(--fullScreen-width);
+  background: rgb(0, 0, 0);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.returnBtn {
+	text-shadow: 1px 1px pink, -1px -1px rgb(66, 34, 205);
+	line-height: 1.5em;
+	text-align: center;
+	display: inline-block;
+	width: 20rem;
+  height: 10rem;
+  font-size: 3rem;
+  font-family: "minecraft bold";
+	-webkit-border-radius: .75em;
+	-moz-border-radius: .75em;
+	-o-border-radius: .75em;
+		border-radius: .75em;
+	background-color: red;
+	-webkit-box-shadow:  0 .2em rgb(66, 34, 205);
+	-moz-box-shadow:  0 .2em rgb(66, 34, 205);
+	-o-box-shadow:  0 .2em rgb(66, 34, 205);
+	box-shadow:  0 .2em rgb(66, 34, 205);
+	color: rgb(55, 27, 27);
+	margin: 5px;
+	background-color: red;
+	background-image: -o-linear-gradient(left top, rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
+	background-image: -moz-linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
+	background-image: -webkit-linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
+	background-image: linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
+	cursor: pointer;
+  padding-left: 5px;
+}
+
+.returnBtn:active{
+  box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+

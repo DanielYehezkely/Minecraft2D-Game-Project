@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MineCraft2D - Project</title>
+  </head>
+  <body>
+    <audio controls id="background-music" loop  >
+      <source src="/assets/sounds/Game-Sound.ogg" type="audio/mpeg">
+  </audio>
+    <div id="landing-page" class="landingPage">
+      <div id="logo"></div>
+      <div id="instructions">
+        <ul>
+          <li>Begin with picking a Tool</li>
+          <li>Remove tiles form the screen using that tool</li>
+          <li>You can place the tiles in any place on the screen</li>
+          <li>Rebuild and style your own World!</li>
+        </ul>
+      </div>
+      <div id="start-btn" class="startBtn">Start Game</div>
+    </div>
+
+    <div id="game-container" class="gameContainer">
+      <div id="tool-bar">
+        <div class="pauseBtn">Pause Game</div>
+        <div class="shovelBtn toolBar-Box"></div>
+        <div class="pickaxeBtn toolBar-Box"></div>
+        <div class="axeBtn toolBar-Box"></div>
+        <div class="syringeBtn toolBar-Box"></div>
+        <div id="animatedStashBox" class="animatedStashBox"></div>
+        <div id="reset-button" class="resetBtn">Reset</div>
+
+        <div id="stashContainer" class="stashContainer">
+          <div class="cloudInStash itemInStash">0</div>
+          <div class="leavesInStash itemInStash">0</div>
+          <div class="strongLeavesInStash itemInStash">0</div>
+          <div class="woodInStash itemInStash">0</div>
+          <div class="soilInStash itemInStash">0</div>
+          <div class="rockInStash itemInStash">0</div>
+          <div class="grassInStash itemInStash">0</div>
+          <div class="ironInStash itemInStash">0</div>
+          <div class="goldInStash itemInStash">0</div>
+          <div class="diamondInStash itemInStash">0</div>
+        </div>
+      </div>
+      <div id="world-map"></div>
+    </div>
+
+    <div id="pauseScreen">
+      <div class="returnBtn">Return to Game</div>
+    </div>
+    
+    <script type="module" src="./src/Game.js"></script>
+  </body>
+</html>

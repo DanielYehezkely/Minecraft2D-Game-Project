@@ -1,0 +1,22 @@
+export const TILES_TEMPLATE = [
+    ['skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//0
+    ['skyT','cloudT','cloudT','cloudT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//1
+    ['skyT','cloudT','cloudT','cloudT','cloudT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//2
+    ['skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','cloudT','cloudT','cloudT','cloudT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//3
+    ['skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','cloudT','cloudT','cloudT','cloudT','cloudT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//4
+    ['skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','cloudT','cloudT','cloudT','cloudT','skyT','skyT','skyT','skyT','skyT','skyT'],//5
+    ['skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//6
+    ['skyT','skyT','skyT','strongLeavesT','strongLeavesT','strongLeavesT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//'soilT'
+    ['skyT','skyT','skyT','strongLeavesT','strongLeavesT','strongLeavesT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','leavesT','leavesT','leavesT','skyT','skyT','skyT','skyT','skyT','skyT'],//8
+    ['skyT','skyT','skyT','strongLeavesT','strongLeavesT','strongLeavesT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','leavesT','leavesT','leavesT','skyT','skyT','skyT','skyT','skyT','skyT'],//9
+    ['skyT','skyT','skyT','skyT','woodT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','leavesT','leavesT','leavesT','skyT','skyT','skyT','skyT','skyT','skyT'],//1'skyT'
+    ['skyT','skyT','skyT','skyT','woodT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','skyT','woodT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//11
+    ['skyT','skyT','skyT','skyT','woodT','skyT','rockT','skyT','skyT','skyT','skyT','skyT','rockT','skyT','skyT','skyT','skyT','woodT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//12
+    ['skyT','skyT','skyT','skyT','woodT','skyT','rockT','rockT','skyT','skyT','skyT','skyT','rockT','skyT','skyT','skyT','skyT','woodT','skyT','skyT','skyT','skyT','skyT','skyT','skyT'],//13
+    ['grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT','grassT'],//14
+    ['soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','diamondT','soilT','soilT','soilT','soilT','soilT','soilT','soilT','soilT'],//15
+    ['soilT','soilT','ironT','goldT','soilT','soilT','soilT','soilT','soilT','goldT','ironT','ironT','soilT','soilT','ironT','soilT','soilT','soilT','ironT','soilT','diamondT','soilT','soilT','soilT','ironT'],//1'goldT'
+    ['soilT','soilT','soilT','goldT','soilT','goldT','soilT','soilT','soilT','goldT','goldT','soilT','soilT','soilT','goldT','soilT','soilT','soilT','soilT','ironT','soilT','soilT','soilT','soilT','soilT'],//1'soilT'
+    ['soilT','soilT','soilT','goldT','goldT','soilT','soilT','soilT','soilT','goldT','soilT','goldT','goldT','goldT','goldT','soilT','soilT','soilT','soilT','soilT','soilT','ironT','soilT','soilT','soilT'],
+    ['diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT','diamondT']//19
+ ]

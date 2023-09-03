@@ -1,0 +1,26 @@
+# Ignore Node.js related files and directories
+node_modules/             # Ignore the entire node_modules directory
+npm-debug.log             # Ignore npm debug logs
+yarn-error.log            # Ignore Yarn error logs
+
+# Ignore build and output directories
+dist/                     # Ignore the dist directory, where build artifacts are often placed
+build/                    # Ignore the build directory if used for temporary build files
+coverage/                 # Ignore code coverage reports if generated
+
+# Ignore local configuration files
+.env                      # Ignore local environment configuration files
+
+# Ignore editor or IDE-specific files and directories
+.vscode/                  # Ignore Visual Studio Code settings
+.idea/                    # Ignore JetBrains IDE settings
+*.sublime-project         # Ignore Sublime Text project files
+*.sublime-workspace       # Ignore Sublime Text workspace files
+*.iml                     # Ignore IntelliJ IDEA module files
+
+# Ignore operating system files
+.DS_Store                 # Ignore macOS Finder metadata files
+Thumbs.db                 # Ignore Windows thumbnail cache files
+
+# Ignore compiled JavaScript files
+*.js                      # Ignore compiled JavaScript files

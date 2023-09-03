@@ -1,0 +1,26 @@
+:root {
+    --landing-page-image: url("/assets/images/Landind-Page-Image.jpg") no-repeat center
+    center/cover;
+    --logo-image: url("/assets/images/Minecraft-Logo-2013-2021.png") no-repeat center center/cover;
+    --font-family-default: "Minecraft Bold";
+    --leaves-image:  url("/assets/images/leaves.png") no-repeat center/cover;
+    --strongLeaves-image:  url("/assets/images/strongLeaves.webp") no-repeat center/cover;
+    --wood-image:  url("/assets/images/wood.png") no-repeat center/cover;
+    --grass-image:  url("/assets/images/grassTexture.png") no-repeat center/cover;
+    --soil-image:  url("/assets/images/dirtTexture.png") no-repeat center/cover;
+    --rock-image:  url("/assets/images/cobbleTexture.png") no-repeat center/cover;
+    --iron-image:  url("/assets/images/ironTexture.png") no-repeat center/cover;
+    --gold-image:  url("/assets/images/goldTexture.png") no-repeat center/cover;
+    --diamond-image:  url("/assets/images/diamondTexture.png") no-repeat center/cover;
+    --cloud-color: white;
+    --shovel-image: url('/assets/images/woodenShovelTexture.png')no-repeat center center;
+    --pickaxe-image: url('/assets/images/woodenPickaxeTexture.png')no-repeat center center;
+    --axe-image: url('/assets/images/woodenAxeTexture.png')no-repeat center center;
+    --syringe-image: url('/assets/images/syringe.png')no-repeat center center/cover;
+    --animatedBox-image: url('/assets/images/boxAnimated.webp')no-repeat center center/cover;
+    --tools-image-size: 12rem 12rem;
+    --fullScreen-height: 100vh;
+    --fullScreen-width: 100vw;
+    --currently-Active-color: #49ee02;
+    --hovering-tiles-color: #ff0000;
+}
