@@ -15,7 +15,7 @@ export const pickAxeBtn = document.querySelector('.pickaxeBtn')
 export const axeBtn = document.querySelector('.axeBtn')
 export const syringeBtn = document.querySelector('.syringeBtn')
 // ================== StashBox ========================== ////
-export const animatedStashBox =  document.getElementById('animatedStashBox')
+export const animatedStashBox = document.getElementById('animatedStashBox')
 // ================= Reset - Button===================== ////
 export const resetBtn = document.getElementById('reset-button');
 // ================= Tiles ============================= ////
@@ -48,6 +48,14 @@ export const shovelCursorImage = "url('/assets/images/Shovel-Cursor.png'), auto"
 export const axeCursorImage = "url('/assets/images/axe-cursor.png'), auto"
 export const pickAxeCursorImage = "url('/assets/images/PickAxe-Cursor.png'), auto"
 export const syringeCursorImage = "url('/assets/images/syringe-cursor.png'), auto"
+
+// ================== tools and tiles elements List ==================== ///
+export const toolsAndTilesElements = [
+    shovelBtn, pickAxeBtn, axeBtn, syringeBtn,
+    cloudInStash, leavesInStash, strongLeavesInStash,
+    woodInStash, grassInStash, soilInStash,
+    rockInStash, ironInStash, goldInStash, diamondInStash
+]
 
 
 

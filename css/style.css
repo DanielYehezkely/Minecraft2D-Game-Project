@@ -81,10 +81,9 @@
 
 /* ====================================Tiles ===================================================== */
 .tile:hover {
-  border-top: var(--hovering-tiles-color) solid 1px ;
-  border-left: var(--hovering-tiles-color) solid 1px ;
+  border-top: var(--hovering-tiles-color) solid 1px;
+  border-left: var(--hovering-tiles-color) solid 1px;
 }
-
 
 .sky {
   background-color: transparent;
@@ -111,7 +110,7 @@
 }
 
 .grass {
-  background: var(--grass-image)
+  background: var(--grass-image);
 }
 
 .soil {
@@ -190,26 +189,25 @@
   top: 0.2em;
 }
 
-.shovelBtn{
+.shovelBtn {
   background: var(--shovel-image);
   background-size: var(--tools-image-size);
   background-color: var(--cloud-color);
 }
-.pickaxeBtn{
+.pickaxeBtn {
   background: var(--pickaxe-image);
   background-size: var(--tools-image-size);
   background-color: var(--cloud-color);
 }
-.axeBtn{
+.axeBtn {
   background: var(--axe-image);
   background-size: var(--tools-image-size);
   background-color: var(--cloud-color);
 }
-.syringeBtn{
+.syringeBtn {
   background: var(--syringe-image);
   background-size: var(--tools-image-size);
   background-color: var(--cloud-color);
-  
 }
 
 .animatedStashBox {
@@ -221,37 +219,47 @@
 }
 
 .resetBtn {
-	text-shadow: 1px 1px pink, -1px -1px maroon;
-	line-height: 1.5em;
-	text-align: center;
-	display: inline-block;
-	width: 10rem;
+  text-shadow: 1px 1px pink, -1px -1px maroon;
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 10rem;
   height: 5rem;
   font-size: 2.5rem;
   font-family: var(--font-family-default);
-	-webkit-border-radius: .75em;
-	-moz-border-radius: .75em;
-	-o-border-radius: .75em;
-		border-radius: .75em;
-	background-color: red;
-	-webkit-box-shadow:  0 .2em maroon;
-	-moz-box-shadow:  0 .2em maroon;
-	-o-box-shadow:  0 .2em maroon;
-	box-shadow:  0 .2em maroon;
-	color: rgb(55, 27, 27);
-	margin: 5px;
-	background-color: red;
-	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-	cursor: pointer;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+  background-color: red;
+  -webkit-box-shadow: 0 0.2em maroon;
+  -moz-box-shadow: 0 0.2em maroon;
+  -o-box-shadow: 0 0.2em maroon;
+  box-shadow: 0 0.2em maroon;
+  color: rgb(55, 27, 27);
+  margin: 5px;
+  background-color: red;
+  background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  background-image: -moz-linear-gradient(
+    left top,
+    pink 3%,
+    red 22%,
+    maroon 99%
+  );
+  background-image: -webkit-linear-gradient(
+    left top,
+    pink 3%,
+    red 22%,
+    maroon 99%
+  );
+  background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  cursor: pointer;
   padding-left: 5px;
 }
-.resetBtn:active{
+.resetBtn:active {
   box-shadow: none;
   position: relative;
-  top: .2em;
+  top: 0.2em;
 }
 /* =================== Stash ======================================================= */
 #stashContainer {
@@ -260,7 +268,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5,1fr);
+  grid-template-rows: repeat(5, 1fr);
   width: 10%;
   height: 30%;
   background-color: #7e8680;
@@ -279,31 +287,31 @@
   background-color: var(--cloud-color);
 }
 .leavesInStash {
-  background: var(--leaves-image)
+  background: var(--leaves-image);
 }
 .strongLeavesInStash {
-  background: var(--strongLeaves-image)
+  background: var(--strongLeaves-image);
 }
 .woodInStash {
-  background: var(--wood-image)
+  background: var(--wood-image);
 }
 .soilInStash {
-   background: var(--soil-image)
+  background: var(--soil-image);
 }
 .grassInStash {
-  background: var(--grass-image)
+  background: var(--grass-image);
 }
 .rockInStash {
-  background: var(--rock-image)
+  background: var(--rock-image);
 }
 .ironInStash {
-  background: var(--iron-image)
+  background: var(--iron-image);
 }
 .goldInStash {
-  background: var(--gold-image)
+  background: var(--gold-image);
 }
 .diamondInStash {
-  background: var(--diamond-image)
+  background: var(--diamond-image);
 }
 /* =============================Pause - functions ======================================================== */
 #pauseScreen {
@@ -316,37 +324,56 @@
 }
 
 .returnBtn {
-	text-shadow: 1px 1px pink, -1px -1px rgb(66, 34, 205);
-	line-height: 1.5em;
-	text-align: center;
-	display: inline-block;
-	width: 20rem;
+  text-shadow: 1px 1px pink, -1px -1px rgb(66, 34, 205);
+  line-height: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 20rem;
   height: 10rem;
   font-size: 3rem;
-  font-family: "minecraft bold";
-	-webkit-border-radius: .75em;
-	-moz-border-radius: .75em;
-	-o-border-radius: .75em;
-		border-radius: .75em;
-	background-color: red;
-	-webkit-box-shadow:  0 .2em rgb(66, 34, 205);
-	-moz-box-shadow:  0 .2em rgb(66, 34, 205);
-	-o-box-shadow:  0 .2em rgb(66, 34, 205);
-	box-shadow:  0 .2em rgb(66, 34, 205);
-	color: rgb(55, 27, 27);
-	margin: 5px;
-	background-color: red;
-	background-image: -o-linear-gradient(left top, rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
-	background-image: -moz-linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
-	background-image: -webkit-linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
-	background-image: linear-gradient(left top,  rgb(172, 184, 209) 3%, rgb(60, 120, 180) 22%, rgb(66, 34, 205) 99%);
-	cursor: pointer;
+  font-family: var(--font-family-default);
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+  background-color: red;
+  -webkit-box-shadow: 0 0.2em rgb(66, 34, 205);
+  -moz-box-shadow: 0 0.2em rgb(66, 34, 205);
+  -o-box-shadow: 0 0.2em rgb(66, 34, 205);
+  box-shadow: 0 0.2em rgb(66, 34, 205);
+  color: rgb(55, 27, 27);
+  margin: 5px;
+  background-color: red;
+  background-image: -o-linear-gradient(
+    left top,
+    rgb(172, 184, 209) 3%,
+    rgb(60, 120, 180) 22%,
+    rgb(66, 34, 205) 99%
+  );
+  background-image: -moz-linear-gradient(
+    left top,
+    rgb(172, 184, 209) 3%,
+    rgb(60, 120, 180) 22%,
+    rgb(66, 34, 205) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    left top,
+    rgb(172, 184, 209) 3%,
+    rgb(60, 120, 180) 22%,
+    rgb(66, 34, 205) 99%
+  );
+  background-image: linear-gradient(
+    left top,
+    rgb(172, 184, 209) 3%,
+    rgb(60, 120, 180) 22%,
+    rgb(66, 34, 205) 99%
+  );
+  cursor: pointer;
   padding-left: 5px;
 }
 
-.returnBtn:active{
+.returnBtn:active {
   box-shadow: none;
-	position: relative;
-	top: .2em;
+  position: relative;
+  top: 0.2em;
 }
-
