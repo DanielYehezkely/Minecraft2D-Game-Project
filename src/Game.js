@@ -42,6 +42,6 @@ import { startBtn, resetBtn, shovelBtn, pickAxeBtn, axeBtn, syringeBtn, animated
 
  const MINECRAFT2D_GAME = new Game()
 MINECRAFT2D_GAME.initialize();
-MINECRAFT2D_GAME.setupEventListeners();
+
 
 
