@@ -1,4 +1,4 @@
-import { axeBtn, cloudInStash, diamondInStash, goldInStash, grassInStash, ironInStash, leavesInStash, pickAxeBtn, rockInStash, shovelBtn, soilInStash, strongLeavesInStash, syringeBtn, woodInStash, toolsAndTilesElements } from "../models/Constants.js"
+import {  cloudInStash, diamondInStash, goldInStash, grassInStash, ironInStash, leavesInStash,  rockInStash,  soilInStash, strongLeavesInStash,  woodInStash, toolsAndTilesElements } from "../models/Constants.js"
 import { axeSound, pickaxeSound, shovelSound, syringeSound } from "../models/Sounds.js"
 
 import { resources } from "./Player.js"
